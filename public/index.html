@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Anyelo Reyes · Desarrollador</title>
+  <meta name="description" content="Portfolio de Anyelo Reyes: desarrollo de software, IA y automatización." />
+  <meta property="og:title" content="Anyelo Reyes · Desarrollador" />
+  <meta property="og:description" content="Desarrollo de software, IA y automatización." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#0b1020" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <a class="brand" href="#inicio">AR<span>.</span></a>
+    <nav>
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <p class="eyebrow">Hola, soy</p>
+      <h1>Anyelo Reyes</h1>
+      <p class="lead">
+        Desarrollador de software enfocado en <strong>IA</strong>,
+        <strong>automatización</strong> y productos web que resuelven problemas reales.
+      </p>
+      <div class="actions">
+        <a class="btn primary" href="#proyectos">Ver proyectos</a>
+        <a class="btn" href="#contacto">Contactar</a>
+      </div>
+    </section>
+
+    <section id="sobre-mi" class="section">
+      <h2>Sobre mí</h2>
+      <p>
+        Me gusta construir herramientas útiles de principio a fin: desde la idea y el
+        prototipo hasta el despliegue en producción. Trabajo con Next.js, Firebase,
+        modelos de lenguaje y automatización, y gestiono mi propia infraestructura.
+      </p>
+      <ul class="tags">
+        <li>Next.js</li>
+        <li>TypeScript</li>
+        <li>Firebase</li>
+        <li>Gemini / IA</li>
+        <li>Docker</li>
+        <li>Coolify</li>
+      </ul>
+    </section>
+
+    <section id="proyectos" class="section">
+      <h2>Proyectos</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Chatbot inmobiliario con IA</h3>
+          <p>
+            Asistente que cualifica candidatos a alquiler en tiempo real con Gemini,
+            con panel de administración, scoring y toma de control humana.
+          </p>
+          <ul class="tags small">
+            <li>Next.js</li>
+            <li>Gemini</li>
+            <li>Firestore</li>
+          </ul>
+          <a class="link" href="https://chatbot.anyeloreyesg.com" target="_blank" rel="noopener">Ver proyecto →</a>
+        </article>
+
+        <article class="card">
+          <h3>Próximo proyecto</h3>
+          <p>Aquí irán más trabajos. Pásame los que quieras destacar y los añadimos.</p>
+          <a class="link" href="https://github.com/aerguevara" target="_blank" rel="noopener">Ver GitHub →</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="contacto" class="section">
+      <h2>Contacto</h2>
+      <p>¿Tienes una idea o un proyecto en mente? Escríbeme.</p>
+      <div class="actions">
+        <a class="btn primary" href="mailto:aerguevara@gmail.com">aerguevara@gmail.com</a>
+        <a class="btn" href="https://github.com/aerguevara" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    © <span id="year"></span> Anyelo Reyes
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

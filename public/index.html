@@ -3,97 +3,141 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Anyelo Reyes · Desarrollador</title>
-  <meta name="description" content="Portfolio de Anyelo Reyes: desarrollo de software, IA y automatización." />
-  <meta property="og:title" content="Anyelo Reyes · Desarrollador" />
-  <meta property="og:description" content="Desarrollo de software, IA y automatización." />
+  <title>Anyelo Reyes · Automatizaciones con IA</title>
+  <meta name="description" content="Anyelo Reyes diseña e implementa automatizaciones con IA: agentes, chatbots y flujos que ahorran horas de trabajo." />
+  <meta property="og:title" content="Anyelo Reyes · Automatizaciones con IA" />
+  <meta property="og:description" content="Agentes, chatbots y flujos de trabajo con IA que ahorran horas de trabajo." />
   <meta property="og:type" content="website" />
-  <meta name="theme-color" content="#0b1020" />
+  <meta property="og:image" content="/avatar.jpg" />
+  <meta name="theme-color" content="#070b18" />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="/styles.css" />
 </head>
 <body>
+  <canvas id="net" aria-hidden="true"></canvas>
+  <div class="glow g1"></div>
+  <div class="glow g2"></div>
+
   <header class="nav">
-    <a class="brand" href="#inicio">AR<span>.</span></a>
+    <a class="brand" href="#inicio">AR<span>.</span>ai</a>
     <nav>
-      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#servicios">Qué hago</a>
       <a href="#proyectos">Proyectos</a>
-      <a href="#contacto">Contacto</a>
+      <a href="#proceso">Proceso</a>
+      <a class="nav-cta" href="#contacto">Hablemos</a>
     </nav>
   </header>
 
   <main>
     <section id="inicio" class="hero">
-      <p class="eyebrow">Hola, soy</p>
-      <h1>Anyelo Reyes</h1>
-      <p class="lead">
-        Desarrollador de software enfocado en <strong>IA</strong>,
-        <strong>automatización</strong> y productos web que resuelven problemas reales.
-      </p>
-      <div class="actions">
-        <a class="btn primary" href="#proyectos">Ver proyectos</a>
-        <a class="btn" href="#contacto">Contactar</a>
+      <div class="hero-text">
+        <span class="badge"><i></i> Disponible para nuevos proyectos</span>
+        <h1>
+          Automatizo tu negocio<br />
+          con <span class="grad">inteligencia artificial</span>
+        </h1>
+        <p class="lead">
+          Soy <strong>Anyelo Reyes</strong>. Diseño agentes, chatbots y flujos de trabajo con IA
+          que eliminan tareas repetitivas y convierten horas de trabajo manual en procesos
+          que funcionan solos.
+        </p>
+        <div class="actions">
+          <a class="btn primary" href="#proyectos">Ver casos reales</a>
+          <a class="btn ghost" href="#contacto">Cuéntame tu caso</a>
+        </div>
+        <ul class="stats">
+          <li><b>24/7</b><span>agentes trabajando</span></li>
+          <li><b>-80%</b><span>tareas manuales</span></li>
+          <li><b>End-to-end</b><span>de la idea al deploy</span></li>
+        </ul>
+      </div>
+
+      <div class="hero-avatar">
+        <div class="ring"></div>
+        <img src="/avatar.jpg" alt="Avatar de Anyelo Reyes" width="420" height="420" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'" />
+        <div class="avatar-fallback" style="display:none">AR</div>
+        <span class="chip c1">⚡ Agentes IA</span>
+        <span class="chip c2">🤖 Chatbots</span>
+        <span class="chip c3">🔗 Integraciones</span>
       </div>
     </section>
 
-    <section id="sobre-mi" class="section">
-      <h2>Sobre mí</h2>
-      <p>
-        Me gusta construir herramientas útiles de principio a fin: desde la idea y el
-        prototipo hasta el despliegue en producción. Trabajo con Next.js, Firebase,
-        modelos de lenguaje y automatización, y gestiono mi propia infraestructura.
-      </p>
-      <ul class="tags">
-        <li>Next.js</li>
-        <li>TypeScript</li>
-        <li>Firebase</li>
-        <li>Gemini / IA</li>
-        <li>Docker</li>
-        <li>Coolify</li>
-      </ul>
+    <section id="servicios" class="section">
+      <p class="kicker">Qué hago</p>
+      <h2>Automatizaciones que ahorran tiempo de verdad</h2>
+      <div class="grid">
+        <article class="card">
+          <div class="icon">🤖</div>
+          <h3>Agentes y chatbots con IA</h3>
+          <p>Asistentes conversacionales que atienden, cualifican y responden con tu información, conectados a tus herramientas.</p>
+        </article>
+        <article class="card">
+          <div class="icon">🔄</div>
+          <h3>Flujos de trabajo automáticos</h3>
+          <p>Conecto tus apps (email, hojas, CRM, WhatsApp…) para que los datos se muevan y las tareas se ejecuten solas.</p>
+        </article>
+        <article class="card">
+          <div class="icon">📄</div>
+          <h3>Procesamiento de documentos</h3>
+          <p>Extracción, clasificación y resumen de textos, facturas y formularios con modelos de lenguaje.</p>
+        </article>
+        <article class="card">
+          <div class="icon">🧩</div>
+          <h3>Paneles y herramientas a medida</h3>
+          <p>Apps web internas para supervisar, intervenir y medir lo que hacen tus automatizaciones.</p>
+        </article>
+      </div>
     </section>
 
     <section id="proyectos" class="section">
+      <p class="kicker">Casos reales</p>
       <h2>Proyectos</h2>
-      <div class="grid">
-        <article class="card">
-          <h3>Chatbot inmobiliario con IA</h3>
+      <article class="project">
+        <div class="project-info">
+          <span class="tag-live"><i></i> En producción</span>
+          <h3>Asistente IA para cualificar inquilinos</h3>
           <p>
-            Asistente que cualifica candidatos a alquiler en tiempo real con Gemini,
-            con panel de administración, scoring y toma de control humana.
+            Chatbot con Gemini que conversa con los interesados en una habitación, resuelve sus
+            dudas, extrae su perfil y calcula un score de idoneidad. Incluye panel de administración,
+            toma de control humana en vivo y protección anti-bots.
           </p>
-          <ul class="tags small">
-            <li>Next.js</li>
-            <li>Gemini</li>
-            <li>Firestore</li>
+          <ul class="tags">
+            <li>Gemini</li><li>Next.js</li><li>Firestore</li><li>Docker</li><li>Coolify</li>
           </ul>
-          <a class="link" href="https://chatbot.anyeloreyesg.com" target="_blank" rel="noopener">Ver proyecto →</a>
-        </article>
-
-        <article class="card">
-          <h3>Próximo proyecto</h3>
-          <p>Aquí irán más trabajos. Pásame los que quieras destacar y los añadimos.</p>
-          <a class="link" href="https://github.com/aerguevara" target="_blank" rel="noopener">Ver GitHub →</a>
-        </article>
-      </div>
+          <a class="btn primary" href="https://chatbot.anyeloreyesg.com/r/habitacion-canillejas-1" target="_blank" rel="noopener">Probar el chatbot →</a>
+        </div>
+        <div class="project-demo" aria-hidden="true">
+          <div class="bubble bot">¡Hola! Soy Sara, ¿cómo te llamas y a qué te dedicas?</div>
+          <div class="bubble user">Soy Laura, diseñadora, busco por 6 meses.</div>
+          <div class="bubble bot">Genial 🙌 ¿Para qué fecha te gustaría entrar?</div>
+          <div class="score"><span>Score IA</span><b>86</b></div>
+        </div>
+      </article>
     </section>
 
-    <section id="contacto" class="section">
-      <h2>Contacto</h2>
-      <p>¿Tienes una idea o un proyecto en mente? Escríbeme.</p>
-      <div class="actions">
+    <section id="proceso" class="section">
+      <p class="kicker">Cómo trabajo</p>
+      <h2>De la idea a producción</h2>
+      <ol class="steps">
+        <li><b>1</b><h3>Entender</h3><p>Analizamos qué tareas te quitan tiempo y cuáles tienen más retorno.</p></li>
+        <li><b>2</b><h3>Prototipar</h3><p>Primera versión funcional rápida para validar con casos reales.</p></li>
+        <li><b>3</b><h3>Desplegar</h3><p>Puesta en producción con dominio, HTTPS y despliegue automático.</p></li>
+        <li><b>4</b><h3>Mejorar</h3><p>Medimos, ajustamos prompts y flujos, y seguimos iterando.</p></li>
+      </ol>
+    </section>
+
+    <section id="contacto" class="section cta">
+      <h2>¿Qué tarea te gustaría dejar de hacer a mano?</h2>
+      <p>Cuéntame tu caso y te digo cómo se podría automatizar.</p>
+      <div class="actions center">
         <a class="btn primary" href="mailto:aerguevara@gmail.com">aerguevara@gmail.com</a>
-        <a class="btn" href="https://github.com/aerguevara" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn ghost" href="https://github.com/aerguevara" target="_blank" rel="noopener">GitHub</a>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
-    © <span id="year"></span> Anyelo Reyes
-  </footer>
+  <footer class="footer">© <span id="year"></span> Anyelo Reyes · Hecho con IA y café</footer>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+  <script src="/app.js"></script>
 </body>
 </html>

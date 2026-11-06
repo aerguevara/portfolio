@@ -1,3 +1,4 @@
+document.documentElement.classList.add('js');
 document.getElementById('year').textContent = new Date().getFullYear();
 
 // Scroll reveal
